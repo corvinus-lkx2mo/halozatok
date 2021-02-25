@@ -1,0 +1,20 @@
+﻿h1 {
+    margin: 15px;
+    padding: 25px;
+    border: 10px solid red;
+    border-radius: 25px;
+    text-align: center;
+    font-style:italic;
+}
+div {
+    border: 10px solid fuchsia;
+    border-radius: 25px;
+    
+}
+span{
+    font-style:italic;
+    color: royalblue;
+}
+.tapasztalat {
+    background-color:aqua;
+}

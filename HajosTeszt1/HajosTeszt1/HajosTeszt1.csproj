@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>8330eb68-7ab6-4cca-958f-0922cfb0433e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\cv.css" />
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 
