@@ -1,20 +1,35 @@
-﻿h1 {
-    margin: 15px;
-    padding: 25px;
-    border: 10px solid red;
+﻿body {
+    background: rgba(0, 128, 0, 1);
+}
+
+h1 {
+    margin:60px;
+    padding:20px;
+    border: 3px solid darkblue;
     border-radius: 25px;
     text-align: center;
     font-style:italic;
+    background-color:darkcyan;
 }
-div {
-    border: 10px solid fuchsia;
-    border-radius: 25px;
+h2{
+    font-family:'Bookman Old Style'
+}
+.egész {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    background-image: url("kép/háttér.png");
+    border: 3px solid darkblue;
+    border-radius: 25px 25px 25px 25px;
+    margin:30px
     
 }
 span{
     font-style:italic;
-    color: royalblue;
+    color:green;
+    border-radius:30px;
 }
 .tapasztalat {
-    background-color:aqua;
+    background-image: url("kép/letöltés.jfif");
+    
 }
+.képzettségek{background-image:url("kép/letöltés.jfif");
