@@ -3,28 +3,28 @@
 <head>
     <style>
         html, body {
-            height:100%;
-            background-color:yellowgreen;
+            height: 100%;
+            background-color: yellowgreen;
         }
 
         div {
             margin: 10px;
             border: 1px solid lightgray;
-            border-radius:25px;
-            text-align:center;
-            color:darkblue;
+            border-radius: 25px;
+            text-align: center;
+            color: darkblue;
         }
 
         #külső {
-            height:100%;
-            display:flex;
-            flex-direction:column;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         #kérdés_szöveg {
-            background-color:cornflowerblue;
-            font-size:20px;
-            font-weight:bold;
+            background-color: cornflowerblue;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         #középső {
@@ -35,10 +35,10 @@
         }
 
         #válaszok {
-            flex-grow:1;
-            flex-shrink:1;
-           font-size:30px;
-           padding:50px
+            flex-grow: 1;
+            flex-shrink: 1;
+            font-size: 30px;
+            padding: 50px
         }
 
         #vezérlő {
@@ -49,54 +49,59 @@
         }
 
         #kép {
-            overflow:hidden;
-            flex-shrink:0;
-            padding:50px;
+            overflow: hidden;
+            flex-shrink: 0;
+            padding: 50px;
         }
 
         .gomb {
-             padding:20px;
-    width:80px;
+            padding: 20px;
+            width: 80px;
         }
 
         .kerdes {
         }
+
         .kattintható {
             background-color: lightyellow;
         }
-        .kattintható:hover {
-            background-color: darkblue;
-            color: white;
+
+            .kattintható:hover {
+                background-color: darkblue;
+                color: white;
+            }
+
+        .jó {
+            background-color: green;
         }
-        .jó{
-            background-color:green;
-        }
-        .rossz{
-            background-color:red;
+
+        .rossz {
+            background-color: red;
         }
     </style>
     <meta charset="utf-8" />
     <title></title>
+    <script src="hetedik.js"></script>
 </head>
 <body>
     <div id="külső">
-        <div id="kérdés_szöveg">
-            Melyik volt előbb? A tyúk vagy a tojás?
+        <div id="kérdésszöveg">
+            Kérdés szövege
         </div>
 
         <div id="középső">
             <div id="válaszok">
-                <div id="válasz1" class="kerdes kattintható">Válasz 1</div>
-                <div id="válasz2" class="kerdes kattintható jó">Válasz 2</div>
-                <div id="válasz3" class="kerdes kattintható rossz">Válasz 3</div>
+                <div id="válasz1" class="kérdés" onclick="ellenőrzés1()">Válasz 1</div>
+                <div id="válasz2" class="kérdés" onclick="ellenőrzés1()">Válasz 2</div>
+                <div id="válasz3" class="kérdés" onclick="ellenőrzés1()">Válasz 3</div>
             </div>
             <div id="kép">
                 <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
             </div>
         </div>
         <div id="vezérlő">
-            <div class="gomb kattintható">Vissza</div>
-            <div class="gomb kattintható">Előre</div>
+            <div class="gomb kattintható" id="vissza">Vissza</div>
+            <div class="gomb kattintható" id="előre">Előre</div>
         </div>
     </div>
 </body>
